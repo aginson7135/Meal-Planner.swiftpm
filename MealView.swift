@@ -8,12 +8,10 @@
 import Foundation
 import SwiftUI
 struct MealView: View {
+   // @State var 
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            
         }
     }
 }
