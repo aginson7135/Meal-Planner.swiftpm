@@ -8,12 +8,10 @@
 import Foundation
 import SwiftUI
 struct RecipieLinks: View {
+    @Binding var recipieLinks: URL(string: "https")
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        Link("Recipie Links", destination: recipieLinks)
         }
     }
 }
