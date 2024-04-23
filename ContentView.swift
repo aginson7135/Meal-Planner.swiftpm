@@ -14,6 +14,14 @@ struct ContentView: View {
             
             NavigationView {
                 NavigationLink{
+                    CalorieView()
+                }label: {
+                    Text("Link to Calorie Tracker")
+                }
+            }
+            
+            NavigationView {
+                NavigationLink{
                     PastView()
                 }label: {
                     Text("Link to Past Meal Plans")
