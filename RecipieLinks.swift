@@ -8,10 +8,10 @@
 import Foundation
 import SwiftUI
 struct RecipieLinks: View {
-    @Binding var recipieLinks: URL(string: "https")
+    @State var recipieLinks = URL(string: "https")
     var body: some View {
         VStack {
-        Link("Recipie Links", destination: recipieLinks)
+            Link("Recipie Links", destination: recipieLinks!)
         }
     }
 }
