@@ -3,7 +3,10 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
+            
             Text("Meal Planner")
+            
+            
             NavigationView {
                 NavigationLink{
                     MealView()
@@ -13,21 +16,28 @@ struct ContentView: View {
             }
             
             NavigationView {
-                NavigationLink{
+                NavigationLink ("Link to Calorie Tracker") {
                     CalorieView()
-                }label: {
-                    Text("Link to Calorie Tracker")
                 }
-            }
-            
-            NavigationView {
-                NavigationLink{
-                    PastView()
-                }label: {
-                    Text("Link to Past Meal Plans")
+                
+                NavigationView {
+                    NavigationLink{
+                        DietaryInformationView()
+                    }label: {
+                        Text("Link to More Information")
+                    }
                 }
+                
+                NavigationView {
+                    NavigationLink{
+                        PastView()
+                    }label: {
+                        Text("Link to Past Meal Plans")
+                    }
+                }
+                
+                
             }
-            
         }
     }
 }
