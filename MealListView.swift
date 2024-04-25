@@ -8,12 +8,15 @@
 import Foundation
 import SwiftUI
 struct MealListView: View {
+    let mealOne: InputMeals
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        VStack(alignment: .leading)
+        {
+            Text(mealOne.time)
+                .font(.title)
+            Text(mealOne.meal)
+                .font(.title)
+            Text(mealOne.cals)
         }
     }
 }
