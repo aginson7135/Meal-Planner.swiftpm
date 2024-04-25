@@ -18,6 +18,9 @@ struct RecipieLinks: View {
                  label: {
                 Image(systemName: "link")
             })
+           
+            
         }
     }
+    
 }
