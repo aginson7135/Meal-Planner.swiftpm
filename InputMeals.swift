@@ -11,4 +11,5 @@ struct InputMeals: Hashable {
     var time: String
     var meal: String
     var cals: String
-}
+    
+    }

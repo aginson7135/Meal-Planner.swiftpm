@@ -7,37 +7,23 @@ struct ContentView: View {
             Text("Meal Planner")
             
             
-            NavigationView {
-                NavigationLink{
-                    MealView()
-                }label: {
-                    Text("Link to Current Meal Plan")
-                }
+            NavigationLink ("Link to Current Meal Plan"){
+                MealView()
             }
             
-            NavigationView {
-                NavigationLink ("Link to Calorie Tracker") {
-                    CalorieView()
-                }
-                
-                NavigationView {
-                    NavigationLink{
-                        DietaryInformationView()
-                    }label: {
-                        Text("Link to More Information")
-                    }
-                }
-                
-                NavigationView {
-                    NavigationLink{
-                        PastView()
-                    }label: {
-                        Text("Link to Past Meal Plans")
-                    }
-                }
-                
-                
+            NavigationLink ("Link to Calorie Tracker") {
+                CalorieView()
             }
+            
+            NavigationLink ("Link to More Information") {
+                DietaryInformationView()
+            }
+            
+            NavigationLink ("Link to Past Meal Plans") {
+                PastView()
+            }
+            
+            
         }
     }
 }
