@@ -8,20 +8,24 @@ struct ContentView: View {
             
             NavigationStack{
                 
-                NavigationLink ("Link to Current Meal Plan"){
+                NavigationLink ("Current Meal Plan"){
                     MealView()
                 }
                 
-                NavigationLink ("Link to Calorie Tracker") {
+                NavigationLink ("Calorie Tracker") {
                     CalorieView()
                 }
                 
-                NavigationLink ("Link to More Information") {
+                NavigationLink ("More Information") {
                     DietaryInformationView()
                 }
                 
-                NavigationLink ("Link to Past Meal Plans") {
+                NavigationLink ("Past Meal Plans") {
                     PastView()
+                }
+                
+                NavigationLink("Recipe Links") {
+                    RecipieLinks()
                 }
                 
             }
