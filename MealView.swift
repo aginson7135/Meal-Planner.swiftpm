@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 struct MealView: View {
-   // @State var 
+    @State var meals: [InputMeals]  = [InputMeals(time: "", meal: "", cals: "")]
     var body: some View {
         VStack {
             

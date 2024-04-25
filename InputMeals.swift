@@ -7,13 +7,7 @@
 
 import Foundation
 import SwiftUI
-struct InputMeals: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-    }
-}
+struct InputMeals: Hashable {
+    var time: String
+    var meal: String
+    var cals: String
