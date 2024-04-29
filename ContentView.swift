@@ -1,6 +1,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @Binding var mealMeal: String
+    @Binding var mealTime: String
+    @Binding var mealCal: String
+    @Binding var meals: [InputMeals]
+    
     var body: some View {
         VStack {
             
@@ -9,7 +15,7 @@ struct ContentView: View {
             NavigationStack{
                 
                 NavigationLink ("Current Meal Plan"){
-                    MealView()
+                    MealView(mealMeal: mealMeal, mealTime: mealTime, mealCal: mealCal, meals: $meals)
                 }
                 
                 NavigationLink ("Calorie Tracker") {
