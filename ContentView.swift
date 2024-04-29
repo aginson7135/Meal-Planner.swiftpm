@@ -6,6 +6,9 @@ struct ContentView: View {
     @Binding var mealTime: String
     @Binding var mealCal: String
     @Binding var meals: [InputMeals]
+    @State var ShowAlert = false
+    @State var motive = ""
+    
     
     var body: some View {
         VStack {
@@ -35,7 +38,15 @@ struct ContentView: View {
                 }
                 Button("edit"){
                     
+                    
                 }
+                .alert("GO EAT", isPresented: $ShowAlert) {
+                    Button("Okay") {
+                        motive = ""
+                        
+                    }
+                }
+                
             }
        
         }
