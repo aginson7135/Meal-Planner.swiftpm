@@ -27,7 +27,9 @@ struct ContentView: View {
                 NavigationLink("Recipe Links") {
                     RecipieLinks()
                 }
-                
+                Button("edit"){
+                    
+                }
             }
        
         }
