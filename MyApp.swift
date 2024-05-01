@@ -7,6 +7,7 @@ struct MyApp: App {
     @Binding var mealTime: String
     @Binding var mealCal: String
     @Binding var meals: [InputMeals]
+   
     
     var body: some Scene {
         WindowGroup {
