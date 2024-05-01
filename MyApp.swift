@@ -3,10 +3,12 @@ import SwiftUI
 @main
 struct MyApp: App {
     
-    @Binding var mealMeal: String
-    @Binding var mealTime: String
-    @Binding var mealCal: String
-    @Binding var meals: [InputMeals]
+    
+    
+    @State var mealMeal: String = ""
+    @State var mealTime: String = ""
+    @State var mealCal: String = ""
+    @State var meals: [InputMeals] = []
     
     var body: some Scene {
         WindowGroup {
