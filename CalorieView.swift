@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 struct CalorieView: View {
     var body: some View {
-        Text("Today:")
+        Text ("Today:")
         
         
         Text("This Week:")
