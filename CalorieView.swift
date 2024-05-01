@@ -13,5 +13,7 @@ struct CalorieView: View {
         
         
         Text("This Week:")
+        
+        Text("Next Week:")
     }
 }
