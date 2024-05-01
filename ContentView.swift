@@ -8,7 +8,7 @@ struct ContentView: View {
     @Binding var meals: [InputMeals]
     @State var ShowAlert = false
     @State var motive = ""
-    
+    @AppStorage("save") var save: String = ""
     
     var body: some View {
         VStack {
@@ -37,7 +37,14 @@ struct ContentView: View {
                     RecipieLinks()
                 }
                 Button("edit"){
-                    
+                  //  .alert("is about to edit", isPresented: $ShowAlert
+                  //  ){
+                        
+                    }
+                Button("save"){
+                    UserDefaults.standard.setValue(save, forKey: "press to save")
+                }
+               
                     
                 }
                 .alert("GO EAT", isPresented: $ShowAlert) {
@@ -51,4 +58,4 @@ struct ContentView: View {
        
         }
     }
-}
+
