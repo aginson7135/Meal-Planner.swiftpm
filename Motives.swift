@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import SwiftUI
+
 struct Motives: Hashable{
-    var motives: String
+    var motive: String
 }
