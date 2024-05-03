@@ -8,8 +8,11 @@
 import Foundation
 import SwiftUI
 struct MotiveView: View {
+    
+    let currentMotives: Motives
+    
     var body: some View {
-        Text ("MotiveView")
+        Text ("Motivation: \(currentMotives.motive)")
         
     }
 }
