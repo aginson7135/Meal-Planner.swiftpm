@@ -8,6 +8,7 @@ struct ContentView: View {
     @Binding var meals: [InputMeals]
     @State var ShowAlert = false
     @State var motive = ""
+    @State var ShareProgress = "Look At My Progress!!"
     
     
     var body: some View {
@@ -42,6 +43,11 @@ struct ContentView: View {
                         motive = ""
                         
                     }
+                }
+                Button(action: {
+                   // let av =  UIActivityViewController(activityItems: [ShareProgress], applicationActivities: nil); UIApplication.shared.windows.first?.rootViewController?.present(av, animated: true, completion: nil)
+                }){
+                    Text("Share")
                 }
                 
             }
