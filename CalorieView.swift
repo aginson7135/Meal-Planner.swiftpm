@@ -15,7 +15,7 @@ struct CalorieView: View {
         
         Text("This Week:")
         
-        Text("Next Week:")
+        
         Button("+") {
             UserDefaults.standard.setValue(button, forKey: "add")
             
