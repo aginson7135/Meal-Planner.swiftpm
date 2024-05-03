@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 struct CalorieView: View {
+    @AppStorage("+") var button: String = ""
     var body: some View {
         Text ("Today:")
         
@@ -15,5 +16,9 @@ struct CalorieView: View {
         Text("This Week:")
         
         Text("Next Week:")
+        Button("+") {
+            UserDefaults.standard.setValue(button, forKey: "add")
+            
+        }
     }
 }
