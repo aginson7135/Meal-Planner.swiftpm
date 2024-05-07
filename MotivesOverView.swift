@@ -21,7 +21,7 @@ struct MotivesOverView: View {
                 var newMotive = Motives (motive: newMotive)
                 totalMotives.append(newMotive)
                 
-                newMotive = ""
+               // newMotive = ""
             }
         }
     }

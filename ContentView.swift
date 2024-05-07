@@ -44,11 +44,11 @@ struct ContentView: View {
                         
                     }
                 }
-                Button(action: {
-                    let shareButton =  UIActivityViewController(activityItems: [ShareProgress], applicationActivities: nil); UIApplication.shared.windows.first?.rootViewController?.present(shareButton, animated: true, completion: nil)
-                }){
-                    Text("Share")
-                }
+//                Button(action: {
+//                    let shareButton =  UIActivityViewController(activityItems: [ShareProgress], applicationActivities: nil); UIApplication.shared.windows.first?.rootViewController?.present(shareButton, animated: true, completion: nil)
+//                }){
+//                    Text("Share")
+               // }
                 
             }
             
