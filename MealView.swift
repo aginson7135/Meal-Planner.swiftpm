@@ -12,9 +12,9 @@ struct MealView: View {
     @State var mealTime: String = ""
     @State var mealCal: String = ""
     @Binding var meals: [InputMeals]
-    @AppStorage("save") var save: String = ""
+   
     var body: some View {
-        HStack {
+        VStack {
             TextField("Meal", text: $mealMeal)
                 .textFieldStyle(.roundedBorder)
             TextField("Time", text: $mealTime)
@@ -22,13 +22,15 @@ struct MealView: View {
             TextField("Calories", text: $mealCal)
                 .textFieldStyle(.roundedBorder)
             
-            Button("edit"){
-              //  .alert("is about to edit", isPresented: $ShowAlert
-              //  ){
-                    
-                }
-            Button("save"){
-                UserDefaults.standard.setValue(save, forKey: "press to save")
+        
+                
+            Button("+"){
+                let newInputMeals = InputMeals(time: mealTime, meal: mealMeal, cals: mealCal)
+                meals.append(newInputMeals)
+                
+                mealTime = ""
+                mealCal = ""
+                mealMeal = ""
             }
            
                 
