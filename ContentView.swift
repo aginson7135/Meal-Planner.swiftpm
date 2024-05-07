@@ -22,6 +22,10 @@ struct ContentView: View {
                     MealView(mealMeal: mealMeal, mealTime: mealTime, mealCal: mealCal, meals: $meals)
                 }
                 
+                NavigationLink ("Motives") {
+                    MotivesFinalView()
+                }
+                
                 
                 NavigationLink ("More Information") {
                     DietaryInformationView()
