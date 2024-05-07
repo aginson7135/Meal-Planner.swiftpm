@@ -8,7 +8,7 @@ struct ContentView: View {
     @Binding var meals: [InputMeals]
     @State var ShowAlert = false
     @State var motive = ""
-    @State var ShareProgress = "Look At My Progress!!"
+   // @State var ShareProgress = "Look At My Progress!!"
     
     
     var body: some View {
