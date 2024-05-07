@@ -12,11 +12,11 @@ struct MealListView: View {
     var body: some View {
         VStack(alignment: .leading)
         {
-            Text(mealOne.time)
+            Text("\(mealOne.time)")
                 .font(.title)
-            Text(mealOne.meal)
+            Text("\(mealOne.meal)")
                 .font(.title)
-            Text(mealOne.cals)
+            Text("\(mealOne.cals)")
         }
     }
 }
