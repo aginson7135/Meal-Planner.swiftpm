@@ -30,9 +30,6 @@ struct ContentView: View {
                     DietaryInformationView()
                 }
                 
-                NavigationLink ("Past Meal Plans") {
-                    PastView()
-                }
                 
                 NavigationLink("Recipe Links") {
                     RecipieLinks()
@@ -45,7 +42,7 @@ struct ContentView: View {
                     }
                 }
                 Button(action: {
-                   // let av =  UIActivityViewController(activityItems: [ShareProgress], applicationActivities: nil); UIApplication.shared.windows.first?.rootViewController?.present(av, animated: true, completion: nil)
+                    let shareButton =  UIActivityViewController(activityItems: [ShareProgress], applicationActivities: nil); UIApplication.shared.windows.first?.rootViewController?.present(shareButton, animated: true, completion: nil)
                 }){
                     Text("Share")
                 }

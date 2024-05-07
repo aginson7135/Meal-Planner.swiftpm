@@ -10,10 +10,10 @@ import SwiftUI
 struct CalorieView: View {
     @AppStorage("+") var button: String = ""
     var body: some View {
-        Text ("Today:")
+        Text ("Log Calories:")
         
         
-        Text("This Week:")
+       
         
         
         Button("+") {
