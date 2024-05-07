@@ -16,6 +16,7 @@ struct DietaryInformationView: View {
             Text("Recomended intake of carbs is 45% to 65% of total daily calories")
             Text("Recomended intake of fat is 20% to 35% of total daily calories ")
             Text("Recomended intake of fiber is 25 to 30 grams daily")
+            Text("Recomended intake of water is about 11.5 cups a day for women and about 15.5 cups for men")
         }
     }
 }
