@@ -18,10 +18,10 @@ struct MotivesOverView: View {
             TextField("Enter", text: $newMotive) .textFieldStyle(.roundedBorder)
             
             Button("+") {
-                var newMotive = Motives (motive: newMotive)
+                let newMotive = Motives (motive: newMotive)
                 totalMotives.append(newMotive)
                 
-               // newMotive = ""
+              //  newMotive = ""
             }
         }
     }

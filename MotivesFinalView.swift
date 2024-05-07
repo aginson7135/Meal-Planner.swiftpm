@@ -10,11 +10,16 @@ import SwiftUI
 
 struct MotivesFinalView: View {
     
-    @State var totalMotives: [Motives]
+    @State var totalMotives: [Motives] = []
     
     var body: some View{
     Text("Motives")
-        MotivesOverView(totalMotives: $totalMotives)
+        
+    MotivesOverView(totalMotives: $totalMotives)
+        
+        List(totalMotives, id: \.self) { currentMotives in
+            MotiveView(currentMotives: currentMotives)
+        }
     }
 }
 
