@@ -18,7 +18,7 @@ struct ContentView: View {
             
             NavigationStack{
                 
-                NavigationLink ("Current Meal Plan"){
+                NavigationLink ("Meal Plan"){
                     MealView(mealMeal: mealMeal, mealTime: mealTime, mealCal: mealCal, meals: $meals)
                 }
                 
