@@ -30,9 +30,6 @@ struct ContentView: View {
                     DietaryInformationView()
                 }
                 
-                NavigationLink ("Past Meal Plans") {
-                    PastView()
-                }
                 
                 NavigationLink("Recipe Links") {
                     RecipieLinks()
