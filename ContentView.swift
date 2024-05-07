@@ -36,12 +36,23 @@ struct ContentView: View {
                     RecipieLinks()
                 }
                 
-                .alert("GO EAT", isPresented: $ShowAlert) {
-                    Button("Okay") {
+             //   .alert("GO EAT", isPresented: $ShowAlert) {
+               //     Button("Okay") {
+                 //       motive = ""
+                   // }
+             //   }
+                
+                Button(action: {
+                    ShowAlert = true
+                }, label: {
+                    Text("Motivate Me!")
+                })
+                .alert("Motivation of the Day", isPresented: $ShowAlert) {
+                    Button("Yay!") {
                         motive = ""
-                        
                     }
                 }
+                
 //                Button(action: {
 //                    let shareButton =  UIActivityViewController(activityItems: [ShareProgress], applicationActivities: nil); UIApplication.shared.windows.first?.rootViewController?.present(shareButton, animated: true, completion: nil)
 //                }){
