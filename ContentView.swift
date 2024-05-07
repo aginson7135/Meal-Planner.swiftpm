@@ -22,9 +22,6 @@ struct ContentView: View {
                     MealView(mealMeal: mealMeal, mealTime: mealTime, mealCal: mealCal, meals: $meals)
                 }
                 
-                NavigationLink ("Calorie Tracker") {
-                    CalorieView()
-                }
                 
                 NavigationLink ("More Information") {
                     DietaryInformationView()
