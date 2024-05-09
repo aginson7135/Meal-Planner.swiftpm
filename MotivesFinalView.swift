@@ -12,13 +12,13 @@ struct MotivesFinalView: View {
     
     @State var totalMotives: [Motives] = []
     
-    var body: some View{
-    Text("Motives")
-        
-    MotivesOverView(totalMotives: $totalMotives)
-        
-        List(totalMotives, id: \.self) { currentMotives in
-            MotiveView(currentMotives: currentMotives)
+    var body: some View {
+        VStack {
+            Text("Motives")
+            MotivesOverView(totalMotives: $totalMotives)
+            List($totalMotives, id: \.self) { currentMotives in
+                MotiveView(currentMotives: currentMotives)
+            }
         }
     }
 }
