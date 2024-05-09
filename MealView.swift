@@ -28,9 +28,9 @@ struct MealView: View {
                 let newInputMeals = InputMeals(time: mealTime, meal: mealMeal, cals: mealCal)
                 meals.append(newInputMeals)
                 
-                mealTime = ""
-                mealCal = ""
-                mealMeal = ""
+              //  mealTime = ""
+               // mealCal = ""
+               // mealMeal = ""
             }
            
                 
