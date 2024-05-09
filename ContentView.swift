@@ -7,7 +7,7 @@ struct ContentView: View {
     @Binding var mealCal: String
     @Binding var meals: [InputMeals]
     @State private var ShowAlert = false
-
+    @State private var currentMotives: Motives
     
     
     var body: some View {
@@ -42,11 +42,11 @@ struct ContentView: View {
              //   }
                 
                 Button(action: {
-                    ShowAlert = true
+                    self.ShowAlert = true
                 }, label: {
                     Text("Motivate Me!")
                 })
-                .alert("Motivation of the Day", isPresented: $ShowAlert) {
+                .alert("\(currentMotives.motive)", isPresented: $ShowAlert) {
                     Button("Yay!") {
                        // motive = ""
                     }
