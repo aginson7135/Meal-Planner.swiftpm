@@ -58,6 +58,22 @@ struct DietaryInformationView: View {
             Text("Drink enough water so that you are not dehydrated")
             
             Text("Make sure to eat breakfast")
+            
+            Text("Try not to eat too much sugar")
+            
+            Text("Omega-3 Fats Are Crucial and Most People Don’t Get Enough")
+            
+            Text("There Is No Perfect Diet for Everyone")
+            
+            Text("Artificial Trans Fats Are Very Unhealthy")
+            
+            Text("It Is Critical to Avoid a Vitamin D Deficiency")
+            
+            Text("Refined Carbohydrates Are Bad for You")
+            
+            Text("Supplements Can Never Fully Replace Real Foods")
+            
+            Text("Unprocessed Food Is Healthiest")
         }
     }
 }
