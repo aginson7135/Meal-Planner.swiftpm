@@ -2,10 +2,11 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @Binding var mealMeal: String
-    @Binding var mealTime: String
-    @Binding var mealCal: String
-    @Binding var meals: [InputMeals]
+   // @Binding var mealMeal: String
+   // @Binding var mealTime: String
+   // @Binding var mealCal: String
+   // @Binding var meals: [InputMeals]
+    @State var meals: [InputMeals] = []
     @State var ShowAlert = false
 
     
@@ -18,7 +19,8 @@ struct ContentView: View {
             NavigationStack{
                 
                 NavigationLink ("Meal Plan"){
-                    MealView(mealMeal: mealMeal, mealTime: mealTime, mealCal: mealCal, meals: $meals)
+                    MealView(meals: $meals)
+               // mealMeal: mealMeal, mealTime: mealTime, mealCal: mealCal, meals: $meals
                 }
                 
                 NavigationLink ("Motives") {

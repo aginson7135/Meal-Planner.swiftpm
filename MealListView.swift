@@ -10,13 +10,12 @@ import SwiftUI
 struct MealListView: View {
     let mealOne: InputMeals
     var body: some View {
-        VStack(alignment: .leading)
-        {
-            Text("\(mealOne.time)")
+        
+            Text("Time: \(mealOne.time)")
                 .font(.title)
-            Text("\(mealOne.meal)")
+            Text("Meal: \(mealOne.meal)")
                 .font(.title)
-            Text("\(mealOne.cals)")
+            Text("Calories: \(mealOne.cals)")
         }
     }
-}
+
