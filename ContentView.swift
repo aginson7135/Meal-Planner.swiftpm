@@ -6,7 +6,7 @@ struct ContentView: View {
     @Binding var mealTime: String
     @Binding var mealCal: String
     @Binding var meals: [InputMeals]
-    @State var ShowAlert = false
+    @State private var ShowAlert = false
 
     
     
