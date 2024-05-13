@@ -8,6 +8,8 @@ struct ContentView: View {
    // @Binding var meals: [InputMeals]
     @State var meals: [InputMeals] = []
     @State var ShowAlert = false
+    @State var currentMotives: Motives
+//    @Binding var motive: [Motives]
 
     
     
@@ -48,7 +50,7 @@ struct ContentView: View {
                 }, label: {
                     Text("Motivate Me!")
                 })
-                .alert("\(currentMotives.motive)", isPresented: $ShowAlert) {
+                .alert("\($currentMotives.motive)", isPresented: $ShowAlert) {
                     Button("Yay!") {
                        // motive = ""
                     }
