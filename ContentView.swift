@@ -18,21 +18,31 @@ struct ContentView: View {
                 
                 NavigationLink ("Meal Plan"){
                     MealFinalView()
+                        .foregroundColor(.purple)
+                                        .bold()
                // mealMeal: mealMeal, mealTime: mealTime, mealCal: mealCal, meals: $meals
                 }
                 
-                NavigationLink ("Motives") {
+                NavigationLink ("Motives") 
+                {
                     MotivesFinalView()
+                        .foregroundColor(.purple)
+                                        .bold()
+                    
                 }
                 
                 
                 NavigationLink ("More Information") {
                     DietaryInformationView()
+                        .foregroundColor(.purple)
+                                        .bold()
                 }
                 
                 
                 NavigationLink("Recipe Links") {
                     RecipieLinks()
+                        .foregroundColor(.purple)
+                                        .bold()
                 }
                 
              //   .alert("GO EAT", isPresented: $ShowAlert) {
