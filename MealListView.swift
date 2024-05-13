@@ -8,14 +8,20 @@
 import Foundation
 import SwiftUI
 struct MealListView: View {
-    let mealOne: InputMeals
+    let currentMeal: InputMeals
+    
+ //   @Binding var currentTime: InputMeals
+ //   @Binding  var currentMeal: InputMeals
+ //   @Binding var currentCals: InputMeals
+    
     var body: some View {
         
-            Text("Time: \(mealOne.time)")
+            Text("Time: \(currentMeal.time)")
                 .font(.title)
-            Text("Meal: \(mealOne.meal)")
+            Text("Meal: \(currentMeal.meal)")
                 .font(.title)
-            Text("Calories: \(mealOne.cals)")
+            Text("Calories: \(currentMeal.cals)")
         }
     }
 
+//MotiveView

@@ -9,6 +9,7 @@ import Foundation
 import SwiftUI
 
 struct MealFinalView: View {
+    
     @State var meals: [InputMeals] = []
     
     var body: some View{
@@ -16,9 +17,11 @@ struct MealFinalView: View {
         
         MealView(meals: $meals)
         
-        List(meals, id: \.self) { mealOne in
-            MealListView(mealOne: mealOne)
+        List(meals, id: \.self) { currentMeal in
+            MealListView(currentMeal: currentMeal)
             
         }
     }
 }
+
+//MotivesFinalView

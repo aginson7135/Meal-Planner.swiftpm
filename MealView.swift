@@ -8,24 +8,24 @@
 import Foundation
 import SwiftUI
 struct MealView: View {
-    @State var mealMeal: String = ""
-    @State var mealTime: String = ""
-    @State var mealCal: String = ""
+    @State var newMeal: String = ""
+    @State var newTime: String = ""
+    @State var newCal: String = ""
     @Binding var meals: [InputMeals]
    
     var body: some View {
         VStack {
-            TextField("Meal", text: $mealMeal)
+            TextField("Meal", text: $newMeal)
                 .textFieldStyle(.roundedBorder)
-            TextField("Time", text: $mealTime)
+            TextField("Time", text: $newTime)
                 .textFieldStyle(.roundedBorder)
-            TextField("Calories", text: $mealCal)
+            TextField("Calories", text: $newCal)
                 .textFieldStyle(.roundedBorder)
             
         
                 
             Button("+"){
-                let newInputMeals = InputMeals(time: mealTime, meal: mealMeal, cals: mealCal)
+                let newInputMeals = InputMeals(time: newTime, meal: newMeal, cals: newCal)
                 meals.append(newInputMeals)
                 
                 //mealTime = ""
@@ -38,3 +38,5 @@ struct MealView: View {
         }
     }
 }
+
+//MotivesOverView

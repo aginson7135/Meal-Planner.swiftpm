@@ -13,3 +13,5 @@ struct InputMeals: Hashable {
     var cals: String
     
     }
+
+//Motives

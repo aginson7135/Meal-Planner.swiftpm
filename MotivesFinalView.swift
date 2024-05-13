@@ -15,7 +15,9 @@ struct MotivesFinalView: View {
     var body: some View {
         VStack {
             Text("Motives")
+            
             MotivesOverView(totalMotives: $totalMotives)
+            
             List($totalMotives, id: \.self) { currentMotives in
                 MotiveView(currentMotives: currentMotives)
             }
@@ -23,3 +25,4 @@ struct MotivesFinalView: View {
     }
 }
 
+//MealFinalView
