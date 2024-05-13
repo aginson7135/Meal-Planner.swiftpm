@@ -39,4 +39,3 @@ struct MealView: View {
     }
 }
 
-//MotivesOverView

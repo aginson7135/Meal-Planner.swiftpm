@@ -14,4 +14,3 @@ struct InputMeals: Hashable {
     
     }
 
-//Motives

@@ -17,4 +17,3 @@ struct MotiveView: View {
     }
 }
 
-//MealListView

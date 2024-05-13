@@ -12,4 +12,3 @@ struct Motives: Hashable{
     var motive: String
 }
 
-//InputMeals

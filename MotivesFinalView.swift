@@ -25,4 +25,3 @@ struct MotivesFinalView: View {
     }
 }
 
-//MealFinalView

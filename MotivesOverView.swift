@@ -28,4 +28,3 @@ struct MotivesOverView: View {
     
 }
 
-//MealView
