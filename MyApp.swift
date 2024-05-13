@@ -12,7 +12,7 @@ struct MyApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView(mealMeal: $mealMeal, mealTime: $mealTime, mealCal: $mealCal, meals: $meals, currentMotives: Motives)
+          //  ContentView(mealMeal: $mealMeal, mealTime: $mealTime, mealCal: $mealCal, meals: $meals, currentMotives: Motives)
         }
     }
 }
