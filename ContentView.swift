@@ -8,7 +8,7 @@ struct ContentView: View {
     //@Binding var meals: [InputMeals]
     @State var meals: [InputMeals] = []
     @State var ShowAlert = false
-
+    @State var currentMotives: Motives
     
     
     var body: some View {
