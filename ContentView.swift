@@ -2,10 +2,10 @@ import SwiftUI
 
 struct ContentView: View {
     
-   // @Binding var mealMeal: String
-   // @Binding var mealTime: String
-   // @Binding var mealCal: String
-   // @Binding var meals: [InputMeals]
+    //@Binding var mealMeal: String
+    //@Binding var mealTime: String
+    //@Binding var mealCal: String
+    //@Binding var meals: [InputMeals]
     @State var meals: [InputMeals] = []
     @State var ShowAlert = false
     @State var currentMotives: Motives
