@@ -30,15 +30,20 @@ struct ContentView: View {
                         .foregroundColor(.purple)
                                         .bold()
                // mealMeal: mealMeal, mealTime: mealTime, mealCal: mealCal, meals: $meals
+                   
+                                
                 }
+                Spacer().frame(height: 30)
                 
                 NavigationLink ("Motives") 
                 {
                     MotivesFinalView()
                         .foregroundColor(.purple)
                                         .bold()
+                            
                     
                 }
+                Spacer().frame(height: 30)
                 
                 
                 NavigationLink ("More Information") {
@@ -46,6 +51,7 @@ struct ContentView: View {
                         .foregroundColor(.purple)
                                         .bold()
                 }
+                Spacer().frame(height: 30)
                 
                 
                 NavigationLink("Recipe Links") {
@@ -53,6 +59,7 @@ struct ContentView: View {
                         .foregroundColor(.purple)
                                         .bold()
                 }
+                Spacer().frame(height: 30)
                 
              //   .alert("GO EAT", isPresented: $ShowAlert) {
                //     Button("Okay") {
@@ -68,8 +75,10 @@ struct ContentView: View {
                 .alert("\(currentMotives.motive)", isPresented: $ShowAlert) {
                     Text("Hello")
                     Button("Yay!") {
-                       // motive = ""
+                        // motive = ""
                     }
+                    Spacer().frame(height: 30)
+                
                 }
             }
         }

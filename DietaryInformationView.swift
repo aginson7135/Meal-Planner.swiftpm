@@ -29,7 +29,7 @@ struct DietaryInformationView: View {
                 .multilineTextAlignment(.leading)
             
             
-            Text(" - Recomended intake of calories is 2,000 calories a day for women and 2,500 for men")
+            Text(" - Recomended intake of calories a day: 2,000 (women); 2,500 (men)")
                 .foregroundColor(.purple)
                 //.font(.custom("Didot", size: 12))
                 .bold()
@@ -61,7 +61,7 @@ struct DietaryInformationView: View {
                 .lineLimit(1)
                 .multilineTextAlignment(.leading)
             
-            Text(" - Recomended intake of water is about 11.5 cups a day for women; 15.5 cups for men")
+            Text(" - Recomended intake of water a day: 11.5 cups (women); 15.5 cups (men)")
                 .foregroundColor(.purple)
            // .font(.custom("Didot", size: 12))
                 .bold()
