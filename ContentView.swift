@@ -2,11 +2,6 @@ import SwiftUI
 
 struct ContentView: View {
     
-  //  @State var mealMeal: String
-    //@State var mealTime: String
-  //  @State var mealCal: String
-  //  @Binding var meals: [InputMeals]
-   // @State var meals: [InputMeals] = []
     @State var ShowAlert = false
     @State var currentMotives: Motives = Motives(motive: "")
     @State var currentTime: InputMeals = InputMeals(time: "", meal: "", cals: "")
@@ -70,12 +65,9 @@ struct ContentView: View {
                        // motive = ""
                     }
                 }
-                
             }
-            
         }
     }
-    
 }
 
 
