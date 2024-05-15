@@ -17,6 +17,11 @@ struct ContentView: View {
                                 .bold()
                                 .font(.custom("Georgia", size: 100))
                                                 .padding(30)
+                                                .bold()
+                                                .minimumScaleFactor(0.5)
+                                                .lineLimit(2)
+                                                .multilineTextAlignment(.center)
+           
             
             NavigationStack{
                 
