@@ -13,6 +13,10 @@ struct ContentView: View {
         VStack {
             
             Text("Meal Planner")
+                .foregroundColor(.purple)
+                                .bold()
+                                .font(.custom("Georgia", size: 100))
+                                                .padding(30)
             
             NavigationStack{
                 
