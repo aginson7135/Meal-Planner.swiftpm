@@ -61,10 +61,9 @@ struct ContentView: View {
                        // motive = ""
                     }
                 }
-                
             }
-            
         }
     }
-    
 }
+
+
