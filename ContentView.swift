@@ -12,7 +12,7 @@ struct ContentView: View {
     var body: some View {
         VStack {
             
-            Text("Meal Planner")
+            Text("Diet Decider")
                 .foregroundColor(.purple)
                                 .bold()
                                 .font(.custom("Georgia", size: 100))
