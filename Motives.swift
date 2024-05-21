@@ -9,10 +9,8 @@ import Foundation
 import SwiftUI
 
 struct Motives: Hashable {
-    
-    
-    
-    
+
     var motive: String = ""
+    
 }
 
