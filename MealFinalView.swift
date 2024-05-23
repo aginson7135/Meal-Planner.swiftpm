@@ -19,6 +19,7 @@ struct MealFinalView: View {
         
         List(meals, id: \.self) { currentMeal in
             MealListView(currentMeal: currentMeal)
+        
             
         }
     }
