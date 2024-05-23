@@ -14,6 +14,9 @@ struct ContentView: View {
             
             Text("Diet Decider")
                 .foregroundColor(.purple)
+                .underline()
+                .bold()
+                
                                 .bold()
                                 .font(.custom("Georgia", size: 100))
                                                 .padding(30)
