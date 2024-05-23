@@ -8,7 +8,9 @@
 import Foundation
 import SwiftUI
 
-struct Motives: Hashable{
-    var motive: String
+struct Motives: Hashable {
+
+    var motive: String = ""
+    
 }
 

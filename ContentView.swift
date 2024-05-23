@@ -12,7 +12,7 @@ struct ContentView: View {
     var body: some View {
         VStack {
             
-            Text("Meal Planner")
+            Text("Diet Decider")
                 .foregroundColor(.purple)
                                 .bold()
                                 .font(.custom("Georgia", size: 100))
@@ -72,7 +72,8 @@ struct ContentView: View {
                 }, label: {
                     Text("Motivate Me!")
                 })
-                .alert("\($currentMotives.motive)", isPresented: $ShowAlert) {
+                .alert("\(currentMotives.motive)", isPresented: $ShowAlert) {
+                    Text("Hello")
                     Button("Yay!") {
                         // motive = ""
                     }

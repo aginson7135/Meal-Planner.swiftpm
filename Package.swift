@@ -16,7 +16,8 @@ let package = Package(
         .iOSApplication(
             name: "Meal Planner",
             targets: ["AppModule"],
-            bundleIdentifier: "org.jhhs.627135.Meal-Planner",
+            bundleIdentifier: "org.jhhs.6271.Meal-Planner",
+            teamIdentifier: "U4YAT939D4",
             displayVersion: "1.0",
             bundleVersion: "1",
             appIcon: .placeholder(icon: .smiley),
