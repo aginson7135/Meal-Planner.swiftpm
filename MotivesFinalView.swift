@@ -24,7 +24,10 @@ struct MotivesFinalView: View {
                 List{
                     ForEach(totalMotives, id:\.self) { currentMotives in
                         Text("\(currentMotives)")
-                    }.onDelete(perform: <#T##Optional<(Foundation.IndexSet) -> Void>#>)
+                    }
+                    .onDelete { indexSet in
+                        totalMotives.remove(atOffsets: indexSet)
+                    }
                 }
             }
         }
