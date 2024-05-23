@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 struct MotiveView: View {
     
-    @Binding var currentMotives: Motives
+    @State var currentMotives: Motives
     
     var body: some View {
         Text ("Motivation: \(currentMotives.motive)")

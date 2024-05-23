@@ -75,7 +75,8 @@ struct ContentView: View {
                 }, label: {
                     Text("Motivate Me!")
                 })
-                .alert("Motivation: ", isPresented: $ShowAlert) {
+                .alert("\(currentMotives.motive)", isPresented: $ShowAlert) {
+                    Text("Hello")
                     Button("Yay!") {
                         // motive = ""
                     }
