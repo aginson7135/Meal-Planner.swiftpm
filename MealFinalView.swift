@@ -17,9 +17,17 @@ struct MealFinalView: View {
         
         MealView(meals: $meals)
         
-        List(meals, id: \.self) { currentMeal in
-            MealListView(currentMeal: currentMeal)
+      //  List(meals, id: \.self) { currentMeal in
+        //    MealListView(currentMeal: currentMeal)
         
+        List{
+            ForEach(meals, id:\.self) { currentMeal in
+                Text("\(currentMeal)")
+            }
+            .onDelete { indexSet in
+                meals.remove(atOffsets: indexSet)
+            }
+        }
             
         }
     }
