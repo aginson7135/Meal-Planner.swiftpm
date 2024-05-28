@@ -22,9 +22,10 @@ struct MealFinalView: View {
         
         List{
             ForEach(meals, id:\.self) { currentMeal in
-                Text("\(currentMeal.meal)")
-                Text("\(currentMeal.time)")
-                Text("\(currentMeal.cals)")
+                Text("Meal: \(currentMeal.meal)")
+                Text("Time: \(currentMeal.time)")
+                Text("Calorie Count: \(currentMeal.cals)")
+                Spacer()
             }
             .onDelete { indexSet in
                 meals.remove(atOffsets: indexSet)
