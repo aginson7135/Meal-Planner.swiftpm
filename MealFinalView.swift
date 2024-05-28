@@ -12,6 +12,7 @@ struct MealFinalView: View {
     
     @State var meals: [InputMeals] = []
     
+    
     var body: some View{
     Text("Meal Plan")
         

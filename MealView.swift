@@ -12,6 +12,9 @@ struct MealView: View {
     @State var newTime: String = ""
     @State var newCal: String = ""
     @Binding var meals: [InputMeals]
+    @State private var text: String = ""
+    @AppStorage("savedText") private var savedText: String = ""
+    
    
     var body: some View {
         VStack {
@@ -27,6 +30,8 @@ struct MealView: View {
             Button("+"){
                 let newInputMeals = InputMeals(time: newTime, meal: newMeal, cals: newCal)
                 meals.append(newInputMeals)
+                savedText = text
+              
                 
                 //mealTime = ""
                // mealCal = ""
