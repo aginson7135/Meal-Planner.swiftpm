@@ -22,6 +22,7 @@ struct ContentView: View {
                 .underline()
                 .bold()
                 .font(.system(size: 50))
+               
                 
                                 .bold()
                                 .font(.custom("Georgia", size: 100))
@@ -30,7 +31,10 @@ struct ContentView: View {
                                                 .minimumScaleFactor(0.5)
                                                 .lineLimit(2)
                                                 .multilineTextAlignment(.center)
-           
+            
+            Image("mealpic")
+                .resizable()
+                .frame(width: 430, height: 320)
             
             NavigationStack{
                 
@@ -93,8 +97,13 @@ struct ContentView: View {
                 }
               //  Button(action: <#T##() -> Void#>, label: <#T##() -> Label#>)
             }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+
+            .background(.cyan)
         }
+        
     }
+    
 }
 
 
