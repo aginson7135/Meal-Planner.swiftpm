@@ -16,6 +16,12 @@ struct ContentView: View {
                 .foregroundColor(.purple)
                 .underline()
                 .bold()
+                .font(.system(size: 90))
+            Text("add your meals!!")
+                .foregroundColor(.purple)
+                .underline()
+                .bold()
+                .font(.system(size: 50))
                 
                                 .bold()
                                 .font(.custom("Georgia", size: 100))
@@ -32,6 +38,7 @@ struct ContentView: View {
                     MealFinalView()
                         .foregroundColor(.purple)
                                         .bold()
+                                       
                // mealMeal: mealMeal, mealTime: mealTime, mealCal: mealCal, meals: $meals
                    
                                 
@@ -74,6 +81,7 @@ struct ContentView: View {
                     self.ShowAlert = true
                 }, label: {
                     Text("Motivate Me!")
+                        
                 })
                 .alert("\(currentMotives.motive)", isPresented: $ShowAlert) {
                     Text("Hello")
@@ -83,6 +91,7 @@ struct ContentView: View {
                     Spacer().frame(height: 30)
                 
                 }
+              //  Button(action: <#T##() -> Void#>, label: <#T##() -> Label#>)
             }
         }
     }
