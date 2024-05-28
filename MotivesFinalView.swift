@@ -18,9 +18,6 @@ struct MotivesFinalView: View {
             
             MotivesOverView(totalMotives: $totalMotives)
             
-        //    List($totalMotives, id: \.self) { currentMotives in
-          //      MotiveView(currentMotives: currentMotives)
-                
                 List{
                     ForEach(totalMotives, id:\.self) { currentMotives in
                         Text("\(currentMotives)")
