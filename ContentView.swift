@@ -101,7 +101,7 @@ struct ContentView: View {
                             Text("Motivate Me!")
                             
                         })
-                        .alert("\(currentMotives.motive)", isPresented: $ShowAlert) { print($currentMotives.count)
+                        .alert("\(currentMotives.motive)", isPresented: $ShowAlert) { //print($currentMotives.motive)
                             Text("Hello")
                             Button("Yay!") {
                                 // motive = ""
