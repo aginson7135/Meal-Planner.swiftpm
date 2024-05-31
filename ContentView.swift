@@ -36,7 +36,7 @@ struct ContentView: View {
             Button {
                        spin.toggle()
                    }label: {
-                       Text("Spin Image")
+                       Text("press me")
                            .foregroundColor(.green)
                            .bold()
                            .font(.system(size: 30))
