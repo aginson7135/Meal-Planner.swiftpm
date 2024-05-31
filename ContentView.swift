@@ -53,7 +53,7 @@ struct ContentView: View {
                         
                         NavigationLink ("Motives")
                         {
-                            MotivesFinalView()
+                            MotivesFinalView(currentMotives: $currentMotives)
                                 .foregroundColor(.purple)
                                 .bold()
                             
@@ -89,7 +89,7 @@ struct ContentView: View {
                             Text("Motivate Me!")
                             
                         })
-                        .alert("\(currentMotives.motive)", isPresented: $ShowAlert) {
+                        .alert("\(currentMotives.motive)", isPresented: $ShowAlert) { print($currentMotives.count)
                             Text("Hello")
                             Button("Yay!") {
                                 // motive = ""
