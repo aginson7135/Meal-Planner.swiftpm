@@ -11,10 +11,13 @@ import SwiftUI
 struct MotivesFinalView: View {
     
     @State var totalMotives: [Motives] = []
+    @Binding var currentMotives: Motives
     
     var body: some View {
         VStack {
             Text("Motives")
+                .bold()
+                .font(.system(size: 30))
             
             MotivesOverView(totalMotives: $totalMotives)
             

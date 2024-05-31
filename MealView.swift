@@ -20,9 +20,11 @@ struct MealView: View {
         VStack {
             TextField("Meal", text: $newMeal)
                 .textFieldStyle(.roundedBorder)
-            TextField("Time", text: $newTime)
-                .textFieldStyle(.roundedBorder)
+            
             TextField("Calories", text: $newCal)
+                .textFieldStyle(.roundedBorder)
+            
+            TextField("Time", text: $newTime)
                 .textFieldStyle(.roundedBorder)
             
         
