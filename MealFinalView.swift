@@ -15,6 +15,9 @@ struct MealFinalView: View {
     
     var body: some View{
     Text("Meal Plan")
+            .bold()
+            .font(.system(size: 30))
+
         
         MealView(meals: $meals)
         
@@ -24,8 +27,11 @@ struct MealFinalView: View {
         List{
             ForEach(meals, id:\.self) { currentMeal in
                 Text("Meal: \(currentMeal.meal)")
+                
+                Text("Calories: \(currentMeal.cals)")
+                    
                 Text("Time: \(currentMeal.time)")
-                Text("Calorie Count: \(currentMeal.cals)")
+               
                 Spacer()
             }
             .onDelete { indexSet in
