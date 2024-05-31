@@ -8,6 +8,7 @@ struct ContentView: View {
     @State  var currentMeal: InputMeals = InputMeals(time: "", meal: "", cals: "")
     @State var currentCals: InputMeals = InputMeals(time: "", meal: "", cals: "")
     @State var spin = false
+    @State var rotate = 0.0
     
     
     var body: some View {
@@ -39,7 +40,6 @@ struct ContentView: View {
                        Text("Spin Image")
                            .foregroundColor(.green)
                            .bold()
-            
                            .font(.system(size: 30))
                    }
             Image("mealpic")
@@ -109,16 +109,27 @@ struct ContentView: View {
                             Spacer().frame(height: 30)
                             
                         }
+                        Image(systemName: "fanblades")
+                                 .font(.system(size: 80))
+                                 .foregroundColor(.green)
+                                 .rotationEffect(.degrees(rotate))
+                               
+                                 .onAppear {
+                                     withAnimation(.linear(duration: 1)
+                                         .speed(0.1).repeatForever(autoreverses: false)) {
+                                             rotate = 360.0
+                                         }
+                                    
                       
                     }
-                    
+       
                     
                   
                 }
             
         }
         
-  //  }
+    }
     
     
 // }
