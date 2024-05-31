@@ -99,9 +99,9 @@ struct ContentView: View {
                             Spacer().frame(height: 30)
                             
                         }
-                        //  Button(action: <#T##() -> Void#>, label: <#T##() -> Label#>)
+                      
                     }
-                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    
                     
                   
                 }
