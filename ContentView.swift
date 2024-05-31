@@ -7,6 +7,7 @@ struct ContentView: View {
     @State var currentTime: InputMeals = InputMeals(time: "", meal: "", cals: "")
     @State  var currentMeal: InputMeals = InputMeals(time: "", meal: "", cals: "")
     @State var currentCals: InputMeals = InputMeals(time: "", meal: "", cals: "")
+    @State var spin = false
     
     
     var body: some View {
@@ -32,9 +33,20 @@ struct ContentView: View {
                 .lineLimit(2)
                 .multilineTextAlignment(.center)
             
+            Button {
+                       spin.toggle()
+                   }label: {
+                       Text("Spin Image")
+                           .foregroundColor(.green)
+                           .bold()
+            
+                           .font(.system(size: 30))
+                   }
             Image("mealpic")
                 .resizable()
                 .frame(width: 300, height: 250)
+                .rotationEffect(.degrees(spin ? 360 : 0))
+                            .animation(.easeInOut(duration: 1), value: spin)
                
                     }
                     

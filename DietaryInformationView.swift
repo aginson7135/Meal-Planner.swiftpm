@@ -188,6 +188,8 @@ struct DietaryInformationView: View {
                 .minimumScaleFactor(0.5)
                 .lineLimit(1)
                 .multilineTextAlignment(.leading)
+               
         }
+        .background(.yellow)
     }
 }
