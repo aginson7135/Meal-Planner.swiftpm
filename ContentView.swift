@@ -16,76 +16,99 @@ struct ContentView: View {
                 .foregroundColor(.purple)
                 .underline()
                 .bold()
-                
-                                .bold()
-                                .font(.custom("Georgia", size: 100))
-                                                .padding(30)
-                                                .bold()
-                                                .minimumScaleFactor(0.5)
-                                                .lineLimit(2)
-                                                .multilineTextAlignment(.center)
-           
+                .font(.system(size: 90))
+            Text("add your meals!!")
+                .foregroundColor(.purple)
+                .underline()
+                .bold()
+                .font(.system(size: 50))
             
-            NavigationStack{
-                
-                NavigationLink ("Meal Plan"){
-                    MealFinalView()
-                        .foregroundColor(.purple)
-                                        .bold()
-               // mealMeal: mealMeal, mealTime: mealTime, mealCal: mealCal, meals: $meals
-                   
-                                
-                }
-                Spacer().frame(height: 30)
-                
-                NavigationLink ("Motives") 
-                {
-                    MotivesFinalView()
-                        .foregroundColor(.purple)
-                                        .bold()
-                            
-                    
-                }
-                Spacer().frame(height: 30)
-                
-                
-                NavigationLink ("More Information") {
-                    DietaryInformationView()
-                        .foregroundColor(.purple)
-                                        .bold()
-                }
-                Spacer().frame(height: 30)
-                
-                
-                NavigationLink("Recipe Links") {
-                    RecipieLinks()
-                        .foregroundColor(.purple)
-                                        .bold()
-                }
-                Spacer().frame(height: 30)
-                
-             //   .alert("GO EAT", isPresented: $ShowAlert) {
-               //     Button("Okay") {
-                 //       motive = ""
-                   // }
-             //   }
-                
-                Button(action: {
-                    self.ShowAlert = true
-                }, label: {
-                    Text("Motivate Me!")
-                })
-                .alert("\(currentMotives.motive)", isPresented: $ShowAlert) {
-                    Text("Hello")
-                    Button("Yay!") {
-                        // motive = ""
+            
+                .bold()
+                .font(.custom("Georgia", size: 100))
+                .padding(30)
+                .bold()
+                .minimumScaleFactor(0.5)
+                .lineLimit(2)
+                .multilineTextAlignment(.center)
+            
+            Image("mealpic")
+                .resizable()
+                .frame(width: 430, height: 320)
+                .onTapGesture {
+                    withAnimation(.easeIn) {
+                        
                     }
-                    Spacer().frame(height: 30)
-                
+                    
+                    NavigationStack{
+                        
+                        NavigationLink ("Meal Plan"){
+                            MealFinalView()
+                                .foregroundColor(.purple)
+                                .bold()
+                            
+                            // mealMeal: mealMeal, mealTime: mealTime, mealCal: mealCal, meals: $meals
+                            
+                            
+                        }
+                        Spacer().frame(height: 30)
+                        
+                        NavigationLink ("Motives")
+                        {
+                            MotivesFinalView()
+                                .foregroundColor(.purple)
+                                .bold()
+                            
+                            
+                        }
+                        Spacer().frame(height: 30)
+                        
+                        
+                        NavigationLink ("More Information") {
+                            DietaryInformationView()
+                                .foregroundColor(.purple)
+                                .bold()
+                        }
+                        Spacer().frame(height: 30)
+                        
+                        
+                        NavigationLink("Recipe Links") {
+                            RecipieLinks()
+                                .foregroundColor(.purple)
+                                .bold()
+                        }
+                        Spacer().frame(height: 30)
+                        
+                        //   .alert("GO EAT", isPresented: $ShowAlert) {
+                        //     Button("Okay") {
+                        //       motive = ""
+                        // }
+                        //   }
+                        
+                        Button(action: {
+                            self.ShowAlert = true
+                        }, label: {
+                            Text("Motivate Me!")
+                            
+                        })
+                        .alert("\(currentMotives.motive)", isPresented: $ShowAlert) {
+                            Text("Hello")
+                            Button("Yay!") {
+                                // motive = ""
+                            }
+                            Spacer().frame(height: 30)
+                            
+                        }
+                        //  Button(action: <#T##() -> Void#>, label: <#T##() -> Label#>)
+                    }
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    
+                  
                 }
-            }
+            
         }
+        
     }
+    
+    
 }
-
-

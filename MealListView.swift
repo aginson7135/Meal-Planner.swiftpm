@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 struct MealListView: View {
-    
+ 
     let currentMeal: InputMeals
     
     var body: some View {
