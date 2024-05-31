@@ -32,9 +32,9 @@ struct ContentView: View {
                 .lineLimit(2)
                 .multilineTextAlignment(.center)
             
-            //Image("mealpic")
-               // .resizable()
-               // .frame(width: 430, height: 320)
+            Image("mealpic")
+                .resizable()
+                .frame(width: 300, height: 250)
                
                     }
                     
