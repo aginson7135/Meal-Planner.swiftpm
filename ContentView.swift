@@ -115,7 +115,7 @@ struct ContentView: View {
                                
                                  .onAppear {
                                      withAnimation(.linear(duration: 1)
-                                         .speed(0.1).repeatForever(autoreverses: false)) {
+                                        .speed(0.1).repeatForever(autoreverses: false)) {
                                              rotate = 360.0
                                          }
                                     
