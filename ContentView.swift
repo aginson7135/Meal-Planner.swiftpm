@@ -32,6 +32,11 @@ struct ContentView: View {
                 .lineLimit(2)
                 .multilineTextAlignment(.center)
             
+            Image("mealpic")
+                .resizable()
+                .frame(width: 300, height: 250)
+               
+                    }
                     
                     NavigationStack{
                         
@@ -92,16 +97,16 @@ struct ContentView: View {
                             Spacer().frame(height: 30)
                             
                         }
-                        //  Button(action: <#T##() -> Void#>, label: <#T##() -> Label#>)
+                      
                     }
-                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    
                     
                   
                 }
             
         }
         
-    }
+  //  }
     
     
-}
+// }
