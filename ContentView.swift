@@ -17,9 +17,8 @@ struct ContentView: View {
                 .underline()
                 .bold()
                 .font(.system(size: 90))
-            Text("add your meals!!")
+            Text("Add your meals!")
                 .foregroundColor(.purple)
-                .underline()
                 .bold()
                 .font(.system(size: 50))
             
@@ -45,7 +44,7 @@ struct ContentView: View {
                                 .foregroundColor(.purple)
                                 .bold()
                             
-                            // mealMeal: mealMeal, mealTime: mealTime, mealCal: mealCal, meals: $meals
+                            // mealMeal: mealMeal,mealCal: mealCal, mealTime: mealTime,  meals: $meals
                             
                             
                         }

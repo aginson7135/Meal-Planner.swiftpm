@@ -15,6 +15,8 @@ struct MotivesFinalView: View {
     var body: some View {
         VStack {
             Text("Motives")
+                .bold()
+                .font(.system(size: 30))
             
             MotivesOverView(totalMotives: $totalMotives)
             
